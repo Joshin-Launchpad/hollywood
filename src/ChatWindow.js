@@ -16,7 +16,7 @@ class ChatWindow extends Component {
         <h3>Stukent Chat App</h3>
         <ul>
           {this.state.items.map(item => (
-            <li key={item.id}>{item.text}</li>
+            <li key={item.id}>{item.id} {item.text}</li>
           ))}
         </ul>
         <form onSubmit={this.handleSubmit}>
