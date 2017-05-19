@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
+// import moment from './moment-with-locales.js'
+var moment = require('moment');
 
 class ChatWindow extends Component {
 
@@ -32,11 +34,16 @@ class ChatWindow extends Component {
     );
   }
 
+
+
+
+
   dateSet() {
-      var date = new Date().toLocaleTimeString('en-US', { hour: '2-digit', hour12: true, minute: 'numeric', second: 'numeric' });
-      console.log('getDate from date:', date)
-      return date
+    let tFormat = moment().fromNow()
+    return tFormat
   }
+
+
 
   handleChange(e) {
     this.setState({text: e.target.value});
@@ -57,3 +64,13 @@ class ChatWindow extends Component {
 }
 
 export default ChatWindow;
+
+// dateSet() {
+//     var date = new Date().toLocaleTimeString('en-US', { hour: '2-digit', hour12: true, minute: 'numeric', second: 'numeric' });
+//     return date
+// }
+
+// let tFormat = moment().format("hh:mm:ss a")
+// let tFormat = moment().format("hh:mm:ss a").fromNow()
+// let tFormat = moment().format("hh:mm:ss a").fromNow()
+// let date = tFormat.fromNow()
