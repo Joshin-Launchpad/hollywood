@@ -49,8 +49,8 @@ class ChatWindow extends Component {
     e.preventDefault();
     var newItem = {
       text: this.state.text,
-      // id: <Timer />
-      id: this.dateSet()
+      id: <Timer />
+      // id: this.dateSet()
     };
     this.setState((prevState) => ({
       items: prevState.items.concat(newItem),
