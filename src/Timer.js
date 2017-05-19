@@ -1,36 +1,20 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-var moment = require('moment');
+import React, { Component } from 'react'
+import moment from 'moment'
 
-class Timer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { secondsElapsed: 0 };
-  }
-
-  tick() {
-    this.setState(prevState => ({
-      secondsElapsed: prevState.secondsElapsed + 1
-    }));
-  }
+export default class Timer extends Component {
 
   componentDidMount() {
-    this.interval = setInterval(() => this.tick(), 1000);
+    this.interval = setInterval(() => this.forceUpdate(), 1000)
   }
 
   componentWillUnmount() {
-    clearInterval(this.interval);
+    clearInterval(this.interval)
   }
 
   render() {
-    return React.createElement(
-      "div",
-      null,
-      "Seconds Elapsed: ",
-      this.state.secondsElapsed
-    );
+    const {time} = this.props 
+    return (
+      <span>{moment(time, 'x').fromNow()}</span>
+    )
   }
 }
-
-export default Timer
-// ReactDOM.render(React.createElement(Timer, null), mountNode);
