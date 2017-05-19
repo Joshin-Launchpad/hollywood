@@ -15,3 +15,4 @@
   - then I use it again to create the time. Why only the 'id' and not the 'text' as well?
 5.2 Formatted timestamp
   - issue: I'm getting a warning: 'child flattern/unique keyname'. The time stamp also only has one digit for the hour which a '2-digit' format is requested.
+6. Added moment.js as a dependency.
