@@ -7,7 +7,12 @@ class ChatWindow extends Component {
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.state = {items: [], text: ''};
+    // this.dateSet = this.dateSet.bind(this);
+    this.state = {
+      items: [],
+      text: ''
+      // date: dateSet()
+    }
   }
 
   render() {
@@ -27,6 +32,12 @@ class ChatWindow extends Component {
     );
   }
 
+  dateSet() {
+      var date = new Date().toLocaleTimeString('en-US', { hour: '2-digit', hour12: true, minute: 'numeric', second: 'numeric' });
+      console.log('getDate from date:', date)
+      return date
+  }
+
   handleChange(e) {
     this.setState({text: e.target.value});
   }
@@ -35,7 +46,7 @@ class ChatWindow extends Component {
     e.preventDefault();
     var newItem = {
       text: this.state.text,
-      id: Date.now()
+      id: this.dateSet()
     };
     this.setState((prevState) => ({
       items: prevState.items.concat(newItem),
