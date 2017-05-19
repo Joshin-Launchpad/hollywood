@@ -1,4 +1,8 @@
-class Timer extends React.Component {
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+var moment = require('moment');
+
+class Timer extends Component {
   constructor(props) {
     super(props);
     this.state = { secondsElapsed: 0 };
@@ -28,4 +32,5 @@ class Timer extends React.Component {
   }
 }
 
-ReactDOM.render(React.createElement(Timer, null), mountNode);
+export default Timer
+// ReactDOM.render(React.createElement(Timer, null), mountNode);

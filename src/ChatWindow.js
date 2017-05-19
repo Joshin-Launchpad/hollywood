@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './index.css';
 // import moment from './moment-with-locales.js'
 var moment = require('moment');
+import Timer from './Timer';
 
 class ChatWindow extends Component {
 
@@ -34,15 +35,10 @@ class ChatWindow extends Component {
     );
   }
 
-
-
-
-
   dateSet() {
     let tFormat = moment().fromNow()
     return tFormat
   }
-
 
 
   handleChange(e) {
@@ -53,6 +49,7 @@ class ChatWindow extends Component {
     e.preventDefault();
     var newItem = {
       text: this.state.text,
+      // id: <Timer />
       id: this.dateSet()
     };
     this.setState((prevState) => ({
