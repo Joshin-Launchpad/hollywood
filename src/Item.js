@@ -11,10 +11,7 @@ export default class Item extends Component {
     const { message, ts } = this.props.item
     return (
       <div>
-        {message}{emojify(':smile:')}
-
-
-
+        {message}{emojify(':smile: :confused: :cat: :blush:')}
         <br />
         Sent: <Timer time={ts}/>
       </div>

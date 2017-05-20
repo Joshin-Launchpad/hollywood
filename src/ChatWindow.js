@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Item from './Item';
 import './index.css';
+// import Button from './Button'
 // import Emoji from './Emoji';
 
 class ChatWindow extends Component {
@@ -52,6 +53,16 @@ class ChatWindow extends Component {
         </ul>
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} value={textInput} />
+          <br />
+            <button>😀</button>
+            <button>😉</button>
+            <button>😘</button>
+            <button>😛</button>
+          <br />
+            <button>🤔</button>
+            <button>😎</button>
+            <button>☹️</button>
+            <button>👍</button>
             <p>Emoji box here</p>
           <br />
           <button>Send</button>
