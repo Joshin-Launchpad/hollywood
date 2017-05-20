@@ -33,7 +33,7 @@ class ChatWindow extends Component {
     const { items, textInput } = this.state;
     return (
       <div>
-        <h3>Student Chat App</h3>
+        <h3>Let's Chat</h3>
         <ul
           style={{
             padding: 0,
