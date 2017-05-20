@@ -32,6 +32,33 @@ class ChatWindow extends Component {
     }));
   }
 
+  // var inputBox = document.getElementById("inputBox");
+  // let guessButton = document.getElementById("guess-button");
+  // guessButton.addEventListener('click', function () {
+  // let guessInput = document.getElementById("letter-box").value;
+  // tallyLetter(guessInput);
+  // tallyTurn();
+  // if (typeof guessInput !== "string" || guessInput.length != 1) {
+  //   blankOutput.innerHTML = userMessage.entry;
+  //   return false;
+  // }
+
+//++++++++++++
+  showEmoji () {
+  var inputBox = document.getElementById("inputBox");
+  console.log('inputBox', inputBox);
+  var emojiButtons = document.querySelectorAll("Button[className='emoji']");
+  console.log('emojiButtons', emojiButtons);
+  for (let item of emojiButtons) {
+    console.log('item', item);
+    item.addEventListener("click", function () {
+    inputBox.innerHTML = item.value;
+    });
+  }
+}
+//+++++++++++
+
+
 
 // {ReactEmoji.emojify(*hello :)*)}
 // <button className=onClick={action('clicked')}>😀</button>
@@ -53,17 +80,16 @@ class ChatWindow extends Component {
           ))}
         </ul>
         <form onSubmit={this.handleSubmit}>
-          <input onChange={this.handleChange} value={textInput} />
+          <input id="inputBox" onChange={this.handleChange} value={textInput} />
           <br />
-            <div>
-            <Button onClick={action('clicked')}>😀</Button>
-            <button>z</button>
-             <button type="button" onClick="emojiShow()">😀</button>
-              <p>Emoji box here</p>
-            </div>
+
           <br />
           <button>Send</button>
         </form>
+        <div>
+         <Button type="button" className="emoji" onClick="showEmoji()">😀</Button>
+          <p>Emoji box here</p>
+        </div>
       </div>
     );
   }
