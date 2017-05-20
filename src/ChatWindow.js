@@ -66,7 +66,7 @@ class ChatWindow extends Component {
   render() {
     const { items, textInput } = this.state;
     return (
-      <div>
+      <div className="chat-container">
         <h3>Let's Chat</h3>
         <ul
           style={{
