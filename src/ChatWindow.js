@@ -82,7 +82,7 @@ class ChatWindow extends Component {
         <form onSubmit={this.handleSubmit}>
           <input id="inputBox" onChange={this.handleChange} value={textInput} />
           <br />
-<<<<<<< HEAD
+
           <button>Send</button>
         </form>
         <p>Emoji box here</p>
@@ -90,16 +90,6 @@ class ChatWindow extends Component {
         <button type="button" onClick="emojiShow()">😉</button>
         <button type="button" onClick="emojiShow()">😘</button>
         <button type="button" onClick="emojiShow()">🙁</button>
-=======
-
-          <br />
-          <button>Send</button>
-        </form>
-        <div>
-         <Button type="button" className="emoji" onClick="showEmoji()">😀</Button>
-          <p>Emoji box here</p>
-        </div>
->>>>>>> emoji-button
       </div>
     );
   }
