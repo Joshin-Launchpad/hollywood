@@ -6,8 +6,6 @@ import ChatWindow from './ChatWindow';
 
 class App extends Component {
 
-// <img src={logo} className="App-logo" alt="logo" />
-
   render() {
     return (
       <div className="App">

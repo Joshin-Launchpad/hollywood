@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Item from './Item';
+import Button from './Button';
 import './index.css';
 // import Button from './Button'
 // import Emoji from './Emoji';
@@ -23,7 +24,7 @@ class ChatWindow extends Component {
     e.preventDefault();
     var newItem = {
       message: this.state.textInput,
-      ts: Date.now(), // Unix timestamp like 1495230784346
+      ts: Date.now(),
     };
     this.setState(state => ({
       items: [...state.items, newItem],
@@ -31,8 +32,9 @@ class ChatWindow extends Component {
     }));
   }
 
-// {ReactEmoji.emojify(*hello :)*)}
 
+// {ReactEmoji.emojify(*hello :)*)}
+// <button className=onClick={action('clicked')}>😀</button>
 
   render() {
     const { items, textInput } = this.state;
@@ -43,8 +45,7 @@ class ChatWindow extends Component {
           style={{
             padding: 0,
             listStyleType: 'none',
-          }}
-        >
+          }}>
           {items.map(item => (
             <li key={item.ts}>
               <Item item={item} />
@@ -54,16 +55,12 @@ class ChatWindow extends Component {
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} value={textInput} />
           <br />
-            <button>😀</button>
-            <button>😉</button>
-            <button>😘</button>
-            <button>😛</button>
-          <br />
-            <button>🤔</button>
-            <button>😎</button>
-            <button>☹️</button>
-            <button>👍</button>
-            <p>Emoji box here</p>
+            <div>
+            <Button onClick={action('clicked')}>😀</Button>
+            <button>z</button>
+             <button type="button" onClick="emojiShow()">😀</button>
+              <p>Emoji box here</p>
+            </div>
           <br />
           <button>Send</button>
         </form>

@@ -9,7 +9,7 @@ class Emoji extends Component {
 
       // {ReactEmoji.emojify(*hello :)*)}
 
-// <span class="emoji-outer emoji-sizer" style="background: url(https://fst.slack-edge.com/bfaba/img/emoji_2016_06_08/sheet_apple_64_indexed_256colors.png);background-position:65% 62.5%;background-size:4100%"></span>
+      // <span class="emoji-outer emoji-sizer" style="background: url(https://fst.slack-edge.com/bfaba/img/emoji_2016_06_08/sheet_apple_64_indexed_256colors.png);background-position:65% 62.5%;background-size:4100%"></span>
 
 <a class="emoji_li" data-color-index="3" data-name=":slightly_smiling_face:" data-names=":slightly_smiling_face:">
   <span>

@@ -14,7 +14,8 @@ const buttonStyles = {
 const Button = ({ children, onClick }) => (
   <button
     style={buttonStyles}
-    onClick={onClick}>
+    onClick={onClick}
+  >
     {children}
   </button>
 );
