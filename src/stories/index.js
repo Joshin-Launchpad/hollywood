@@ -18,10 +18,15 @@ storiesOf('Welcome', module)
   .add('to Storybook', () => (
     <Welcome showApp={linkTo('Button')}/>
   ));
+storiesOf('Welcome', module)
+  .add('to Storybook', () => (
+    <Welcome showApp={linkTo('Button')}/>
+  ));
 storiesOf('Button', module)
   .add('with text', () => (
     <Button onClick={action('clicked')}>Hello Button</Button>
   ))
   .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>😀 😎 👍 💯 😇 🤓 😉 🙂 💤 😘 😥 🤕 👊</Button>
+    <Button onClick={action('clicked')}>😀</Button>
+    // <Button onClick={action('clicked')}>😀 😎 👍 💯 😇 🤓 😉 🙂 💤 😘 😥 🤕 👊</Button>
   ));

@@ -5,11 +5,14 @@ import ChatWindow from './ChatWindow';
 
 
 class App extends Component {
+
+// <img src={logo} className="App-logo" alt="logo" />
+
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+
         </div>
         <ChatWindow />
       </div>
