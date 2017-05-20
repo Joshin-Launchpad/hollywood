@@ -16,3 +16,9 @@
 5.2 Formatted timestamp
   - issue: I'm getting a warning: 'child flattern/unique keyname'. The time stamp also only has one digit for the hour which a '2-digit' format is requested.
 6. Added moment.js as a dependency.
+7. I try several things but ended up using a mentor resource.
+8. Check list:
+  - [ ] Create emoji component
+  - [ ] find emoji library
+  - [ ] Display emoji img
+  - [ ] output image value (:frown:)

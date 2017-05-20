@@ -59,7 +59,7 @@ export default class Welcome extends React.Component {
       <div style={styles.main}>
         <h1>Welcome to STORYBOOK</h1>
         <p>
-          This is a UI component dev environment for your app.
+          This is a UI component dev environment for your app. 😉
         </p>
         <p>
           We've added some basic stories inside the <code style={styles.code}>src/stories</code> directory.
@@ -84,6 +84,7 @@ export default class Welcome extends React.Component {
           Usually we create stories with smaller UI components in the app.<br />
           Have a look at the <a style={styles.link} href="https://getstorybook.io/docs/basics/writing-stories" target="_blank">Writing Stories</a> section in our documentation.
         </p>
+
       </div>
     );
   }

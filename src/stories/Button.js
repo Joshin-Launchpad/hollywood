@@ -3,12 +3,12 @@ import React from 'react';
 const buttonStyles = {
   border: '1px solid #000',
   borderRadius: 3,
-  backgroundColor: 'skyblue',
+  backgroundColor: '#fff',
   cursor: 'pointer',
   fontSize: 15,
-  padding: '3px 10px',
+  padding: '10px 20px',
   margin: 10,
-  color: '#fff',
+  color: '#000',
 };
 
 const Button = ({ children, onClick }) => (

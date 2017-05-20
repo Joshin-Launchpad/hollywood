@@ -6,7 +6,8 @@
     "moment": "^2.18.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-emoji": "^0.5.0"
+    "react-emoji": "^0.5.0",
+    "react-emojione": "^3.1.10"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",

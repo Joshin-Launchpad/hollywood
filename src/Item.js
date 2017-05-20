@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import Timer from './Timer'
+import {emojify} from 'react-emojione';
 
 export default class Item extends Component {
   render() {
     const { message, ts } = this.props.item
     return (
       <div>
-        {message}
+        {message}{emojify(':smile:')}
         <br />
-        Sent at: <Timer time={ts}/>
+        Sent: <Timer time={ts}/>
       </div>
     );
   }
