@@ -26,7 +26,19 @@ storiesOf('Button', module)
   .add('with text', () => (
     <Button onClick={action('clicked')}>Hello Button</Button>
   ))
-  .add('with some emoji', () => (
+storiesOf('Button', module)
+  .add('with text', () => (
     <Button onClick={action('clicked')}>😀</Button>
-    // <Button onClick={action('clicked')}>😀 😎 👍 💯 😇 🤓 😉 🙂 💤 😘 😥 🤕 👊</Button>
-  ));
+  ))
+storiesOf('Button', module)
+  .add('with text', () => (
+    <Button onClick={action('clicked')}>😉</Button>
+  ))
+storiesOf('Button', module)
+  .add('with text', () => (
+    <Button onClick={action('clicked')}>😥</Button>
+  ))
+storiesOf('Button', module)  
+  .add('with text', () => (
+    <Button onClick={action('clicked')}>👍</Button>
+  ))
