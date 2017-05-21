@@ -6,14 +6,13 @@ export default class Item extends Component {
 
   // <Button onClick={action('clicked')}>😀</Button>
   // <Button onClick={action('clicked')}>{emojify(':smile:')}</Button>
+  // {emojify(':smile: :confused: :cat: :blush:')}
 
   render() {
     const { message, ts } = this.props.item
     return (
       <div>
-        {message}{emojify(':smile: :confused: :cat: :blush:')}
-        <br />
-        Sent: <Timer time={ts}/>
+        <Timer time={ts}/>: {message}
       </div>
     );
   }

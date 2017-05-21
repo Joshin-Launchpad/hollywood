@@ -49,6 +49,11 @@ ul li {
 }
 
 .pics-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
   height: 70vh;
   width: 70vw;
   margin: 0px;
@@ -62,16 +67,9 @@ ul li {
   padding: 5px;
 }
 
-.thumbnail {
-
-}
-
-.runners {
-  width: 175px;
-}
-
-.rocks {
-  width: 175px;
+.life-pics {
+  height: 150px;
+  margin: 10px;
 }
 
 .logo {

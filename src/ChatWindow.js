@@ -44,18 +44,18 @@ class ChatWindow extends Component {
   // }
 
 //++++++++++++
-  showEmoji () {
-  var inputBox = document.getElementById("inputBox");
-  console.log('inputBox', inputBox);
-  var emojiButtons = document.querySelectorAll("Button[className='emoji']");
-  console.log('emojiButtons', emojiButtons);
-  for (let item of emojiButtons) {
-    console.log('item', item);
-    item.addEventListener("click", function () {
-    inputBox.innerHTML = item.value;
-    });
-  }
-}
+//   showEmoji () {
+//   var inputBox = document.getElementById("inputBox");
+//   console.log('inputBox', inputBox);
+//   var emojiButtons = document.querySelectorAll("Button[className='emoji']");
+//   console.log('emojiButtons', emojiButtons);
+//   for (let item of emojiButtons) {
+//     console.log('item', item);
+//     item.addEventListener("click", function () {
+//     inputBox.innerHTML = item.value;
+//     });
+//   }
+// }
 //+++++++++++
 
 
@@ -67,7 +67,8 @@ class ChatWindow extends Component {
     const { items, textInput } = this.state;
     return (
       <div className="chat-container">
-        <h3>Let's Chat</h3>
+        <h2>How do you Celebrate life?</h2>
+        <p>Chat with us about it.</p>
         <ul
           style={{
             padding: 0,
@@ -82,10 +83,10 @@ class ChatWindow extends Component {
         <form onSubmit={this.handleSubmit}>
           <input id="inputBox" onChange={this.handleChange} value={textInput} />
           <br />
-
+          <br />
           <button>Send</button>
         </form>
-        <p>Emoji box here</p>
+        <br />
         <button type="button" onClick="emojiShow()">😀</button>
         <button type="button" onClick="emojiShow()">😉</button>
         <button type="button" onClick="emojiShow()">😘</button>
