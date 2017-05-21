@@ -28,6 +28,17 @@ ul li {
 }
 
 .thumbnail {
-  height: 20vh;
-  border: none;
+
+}
+
+.roses {
+  width: 300px;
+}
+
+.runners {
+  width: 225px;
+}
+
+.rocks {
+  width: 260px;
 }
