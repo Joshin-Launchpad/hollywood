@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Timer from './Timer'
 import {emojify} from 'react-emojione';
+import './index.css';
+
 
 export default class Item extends Component {
 
@@ -11,7 +13,7 @@ export default class Item extends Component {
   render() {
     const { message, ts } = this.props.item
     return (
-      <div>
+      <div className="output">
         <Timer time={ts}/>: {message}
       </div>
     );

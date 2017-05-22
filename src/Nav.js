@@ -8,7 +8,16 @@ class Nav extends Component {
   render() {
     return (
       <div className="nav-container">
-        <img className="logo" src={logo} alt="Celebrate Life" />
+        <div className="nav-left">
+          <img className="logo" src={logo} alt="Celebrate Life" />
+        </div>
+        <div className="nav-right">
+          <ul className="nav-menu">
+            <li>About</li>
+            <li>Contact</li>
+            <li>Donate</li>
+          </ul>  
+        </div>
       </div>
     );
   }
