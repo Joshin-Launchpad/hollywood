@@ -67,7 +67,7 @@ class ChatWindow extends Component {
     const { items, textInput } = this.state;
     return (
       <div className="chat-container">
-        <h2>How do you Celebrate life?</h2>
+        <h2>How do you Celebrate Life?</h2>
         <p>Chat with us about it.</p>
         <ul
           style={{
